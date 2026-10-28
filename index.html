@@ -156,7 +156,80 @@ nav a {
   color: #6d6763;
 }
 
+.card p {
+  line-height: 1.7;
+  color: #6d6763;
+}
+/* PRODUCTS */
+
+.products {
+  background: #ffffff;
+  padding: 90px 0;
+}
+
+.products-heading {
+  max-width: 700px;
+  margin-bottom: 45px;
+}
+
+.products-heading small,
+.product-card small {
+  color: var(--orange);
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+
+.products-heading h2 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 1.15;
+  margin: 15px 0;
+}
+
+.products-heading p {
+  color: #6d6763;
+  line-height: 1.7;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.product-card {
+  background: var(--light);
+  border-top: 3px solid var(--orange);
+  padding: 32px;
+}
+
+.product-card h3 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  font-weight: normal;
+  margin: 14px 0;
+}
+
+.product-card p {
+  color: #6d6763;
+  line-height: 1.7;
+}
+
+.product-card a {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--orange);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
 /* CONTACT */
+
+.contact {
+  /* CONTACT */
 
 .contact {
   background: var(--brown);
@@ -195,9 +268,10 @@ footer strong {
 
 @media (max-width: 750px) {
 
-  .cards {
-    grid-template-columns: 1fr;
-  }
+  .cards,
+.product-grid {
+  grid-template-columns: 1fr;
+}
 
   nav div:last-child {
     display: none;
@@ -317,10 +391,78 @@ footer strong {
 
   </div>
 
+
+
 </section>
 
 
+<section class="products" id="products">
+
+<div class="container">
+
+  <div class="products-heading">
+
+    <small>FEATURED WORK & PRODUCTS</small>
+
+    <h2>Practical intelligence you can put to work.</h2>
+
+    <p>
+      Tools, reports and frameworks developed around real-world
+      business, real estate and AI challenges.
+    </p>
+
+  </div>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <small>REAL ESTATE INTELLIGENCE</small>
+      <h3>AWREI</h3>
+      <p>
+        Market analysis, pricing strategy and saleability intelligence
+        for residential real estate and new construction.
+      </p>
+      <a href="#">Explore AWREI →</a>
+    </div>
+
+    <div class="product-card">
+      <small>MARKET INTELLIGENCE</small>
+      <h3>Micro Market Report Pack</h3>
+      <p>
+        Structured tools for turning local market data into useful,
+        client-friendly real estate intelligence.
+      </p>
+      <a href="#">View Product →</a>
+    </div>
+
+    <div class="product-card">
+      <small>AI SYSTEMS</small>
+      <h3>AI at Work</h3>
+      <p>
+        Practical guidance for applying AI to everyday workflows,
+        processes and decision-making.
+      </p>
+      <a href="#">View Product →</a>
+    </div>
+
+    <div class="product-card">
+      <small>AI GOVERNANCE</small>
+      <h3>Building an AI Governance Program</h3>
+      <p>
+        A practical framework for responsible AI policies,
+        oversight and organizational adoption.
+      </p>
+      <a href="#">View Product →</a>
+    </div>
+
+  </div>
+
+</div> 
+
 <section class="contact" id="contact">
+
+
+
 
   <h2>Let's start a conversation.</h2>
 
