@@ -226,8 +226,94 @@ nav a {
 }
 
 
+/* SIGNUP */
 
-  /* CONTACT */
+.signup {
+  background: #ffffff;
+  padding: 90px 0;
+  border-top: 1px solid #eeeeee;
+}
+
+.signup-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.signup-copy small {
+  color: var(--orange);
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+
+.signup-copy h2 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 1.15;
+  margin: 15px 0;
+}
+
+.signup-copy p {
+  color: #6d6763;
+  line-height: 1.7;
+}
+
+.signup-panel {
+  background: var(--light);
+  padding: 35px;
+  border-top: 3px solid var(--orange);
+}
+
+.signup-form {
+  display: grid;
+  gap: 10px;
+}
+
+.signup-form label {
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d8d3cf;
+  background: white;
+  font-size: 16px;
+}
+
+.signup-form button {
+  margin-top: 12px;
+  padding: 14px 20px;
+  border: none;
+  background: var(--orange);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background: #b85522;
+}
+
+.signup-note {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #777;
+}
+
+.signup-note a {
+  color: var(--orange);
+  text-decoration: none;
+}
+
+
+/* CONTACT */
 
 .contact {
   background: var(--brown);
@@ -247,7 +333,6 @@ nav a {
   max-width: 650px;
   margin: auto;
 }
-
 /* FOOTER */
 
 footer {
@@ -265,11 +350,12 @@ footer strong {
 /* MOBILE */
 
 @media (max-width: 750px) {
-
-  .cards,
-.product-grid {
+.cards,
+.product-grid,
+.signup-grid {
   grid-template-columns: 1fr;
 }
+ 
 
   nav div:last-child {
     display: none;
@@ -454,11 +540,81 @@ footer strong {
     </div>
 
   </div>
-
 </div> </section>
+<!-- EMAIL SIGNUP -->
+
+<section class="signup" id="signup">
+
+  <div class="container signup-grid">
+
+    <div class="signup-copy">
+
+      <small>PRACTICAL INSIGHTS</small>
+
+      <h2>Practical insights.<br>No noise.</h2>
+
+      <p>
+        Occasional insights on real estate intelligence,
+        AI systems, AI governance and the practical tools
+        I'm developing.
+      </p>
+
+    </div>
+
+    <div class="signup-panel">
+
+      <form class="signup-form" onsubmit="event.preventDefault();">
+
+        <label for="first-name">First Name</label>
+
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          placeholder="First name">
+
+        <label for="email">Email Address</label>
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email address"
+          required>
+
+        <button type="submit">
+          Join the List
+        </button>
+
+        <p class="signup-note">
+          Occasional updates. No spam. Unsubscribe anytime.
+          <a href="#">Privacy Policy</a>
+        </p>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
 
 <section class="contact" id="contact">
 
+  <h2>Let's start a conversation.</h2>
+
+  <p>
+    Working through a real estate intelligence, AI workflow
+    or AI governance challenge?
+  </p>
+
+  <a class="button"
+     href="mailto:Adrian@AdrianWillanger.com">
+     Contact Adrian
+  </a>
+
+</section>
 
 
 
